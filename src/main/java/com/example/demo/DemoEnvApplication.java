@@ -17,7 +17,7 @@ public class DemoEnvApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("env:" + env);
+		System.out.println("env7899999:" + env);
 	}
 
 }
