@@ -12,7 +12,7 @@ public class DemoEnvApplication implements CommandLineRunner {
 	
 //	@Value("${which.env}")
 //	private String env;
-	dsdf
+	
 	@Autowired
 	Environment env;
 	
