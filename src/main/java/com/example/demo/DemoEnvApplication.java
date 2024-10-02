@@ -1,15 +1,20 @@
 package com.example.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.env.Environment;
 
 @SpringBootApplication
 public class DemoEnvApplication implements CommandLineRunner {
 	
-	@Value("${which.env}")
-	private String env;
+//	@Value("${which.env}")
+//	private String env;
+	dsdf
+	@Autowired
+	Environment env;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(DemoEnvApplication.class, args);
@@ -17,7 +22,7 @@ public class DemoEnvApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		System.out.println("env123456:" + env);
+		//System.out.println("env123456789:" + env.getProperty("which.env"));
 	}
 
 }
